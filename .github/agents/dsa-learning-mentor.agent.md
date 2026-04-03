@@ -186,6 +186,7 @@ method_signature {
     // TODO: Step 3 - final step
 }
 ```
+```
 
 Your role: Fill in the TODOs
 ```
