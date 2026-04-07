@@ -58,15 +58,43 @@ Unlike generic AI agents, **everything here is designed to evolve and improve it
 
 ## Structure
 
+**Two-Level Architecture:**
+
 ```
-agents/
+agents/ (root)
 ├── .github/
-│   ├── agents/              # Agent definitions
-│   │   └── dsa-learning-mentor.agent.md
-│   ├── skills/              # Skill modules (in development)
-│   └── prompts/             # Prompt templates
-└── README.md                # This file
+│   ├── agents/              # Shared agents (standalone, reusable)
+│   ├── skills/              # Shared skills (reusable across systems)
+│   └── prompts/             # Shared prompts
+│
+└── agent-systems/           # Complete working systems (agents + their specific skills)
+    ├── dsa-learning-mentor/
+    │   ├── agents/
+    │   │   └── dsa-learning-mentor.agent.md
+    │   ├── skills/          # Skills specific to DSA Learning Mentor
+    │   │   ├── first-time-user-onboarding/
+    │   │   ├── project-context-connector/
+    │   │   ├── adaptive-pacing-orchestrator/
+    │   │   ├── scaffolding-boilerplate-manager/
+    │   │   ├── code-review-conductor/
+    │   │   ├── complexity-analysis-reviewer/
+    │   │   └── strivers-dsa-roadmap-reference/
+    │   └── README.md        # System-specific documentation
+    │
+    └── [other-systems]/     # Future: More complete agent systems
+        ├── agents/
+        ├── skills/
+        └── README.md
 ```
+
+**Explanation:**
+
+- **`.github/` (Shared resources):** Standalone agents, reusable skills, and prompts that can be used across multiple systems
+- **`agent-systems/` (Complete systems):** Fully integrated agent systems with all their dependencies, skills, and documentation bundled together
+  - Each system is self-contained and production-ready
+  - Contains the agent + all its specific skills
+  - Includes system-level documentation
+  - Ready to deploy as a complete unit
 
 ---
 
