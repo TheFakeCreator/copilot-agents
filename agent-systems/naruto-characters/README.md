@@ -16,9 +16,9 @@ That’s honestly my favorite part about them.
 
 ## Currently Included
 
-* **Jiraiya Sensei**
-* **Madara Uchiha**
-* **Itachi Uchiha**
+* [**Jiraiya Sensei**](agents/jiraiya.agent.md)
+* [**Madara Uchiha**](agents/madara.agent.md)
+* [**Itachi Uchiha**](agents/itachi.agent.md)
 
 ---
 
@@ -57,9 +57,9 @@ These are only here so you can understand the vibe and personality of the conver
 
 ### About Orphans
 
-![about orphans with itachi - 01](assets/image-5.png)
+![about orphans with itachi - 01](assets/image-6.png)
 
-![about orphans with itachi - 02](assets/image-6.png)
+![about orphans with itachi - 02](assets/image-5.png)
 
 ---
 
