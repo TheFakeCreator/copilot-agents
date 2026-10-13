@@ -50,15 +50,15 @@ Unlike generic AI agents, **everything here is designed to evolve and improve it
 
 ## What's Inside?
 
-- **Agents** (`agents/`) — Autonomous or semi-autonomous assistants tailored for my unique needs—coding, writing, design, learning, and more. Each agent has a specific purpose and personality.
-- **Skills** (`skills/`) — Modular capabilities and workflows that enhance agents or can be reused across different tasks. Think of these as power-ups for AI interactions.
+- **Agents** (`.github/agents/`) — Autonomous or semi-autonomous assistants tailored for my unique needs—coding, writing, design, learning, and more. Each agent has a specific purpose and personality.
+- **MCP Packages** (`mcps/`) — Self-contained Model Context Protocol server packages (YouTube Transcript, YouTube Screenshot) bundling Python servers, requirements, companion agent skills, client config templates, and cleanup tools.
 - **Prompts** (`prompts/`) — Instruction sets, templates, and prompt engineering assets that I've crafted and tested. Reusable patterns that just work.
 
 ---
 
 ## Structure
 
-**Two-Level Architecture:**
+**Repository Architecture:**
 
 ```
 agents/ (root)
@@ -66,6 +66,14 @@ agents/ (root)
 │   ├── agents/              # Shared agents (standalone, reusable)
 │   ├── skills/              # Shared skills (reusable across systems)
 │   └── prompts/             # Shared prompts
+│
+├── mcps/                    # Self-Contained MCP Packages & Tools
+│   ├── youtube-transcript/  # Transcript extraction server + dedicated skill
+│   ├── youtube-screenshot/  # Frame capture & metadata server + dedicated skill
+│   ├── skills/              # Complete bundled skills (transcript, visual, obsidian notes)
+│   ├── scripts/             # Maintenance scripts (Clean-Zombie-MCPs.bat)
+│   ├── mcp_config.example.json # Client config template
+│   └── README.md            # Complete deployment & installation guide
 │
 └── agent-systems/           # Complete working systems (agents + their specific skills)
     ├── dsa-learning-mentor/
@@ -89,12 +97,9 @@ agents/ (root)
 
 **Explanation:**
 
-- **`.github/` (Shared resources):** Standalone agents, reusable skills, and prompts that can be used across multiple systems
-- **`agent-systems/` (Complete systems):** Fully integrated agent systems with all their dependencies, skills, and documentation bundled together
-  - Each system is self-contained and production-ready
-  - Contains the agent + all its specific skills
-  - Includes system-level documentation
-  - Ready to deploy as a complete unit
+- **`mcps/` (Self-Contained MCP Packages):** Modular Model Context Protocol servers bundling server scripts, requirements, companion skills, and configuration templates in one portable directory.
+- **`.github/` (Shared resources):** Standalone agents, reusable skills, and prompts that can be used across multiple systems.
+- **`agent-systems/` (Complete systems):** Fully integrated agent systems with all their dependencies, skills, and documentation bundled together.
 
 ---
 

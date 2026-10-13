@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "youtube-transcript": {
+      "command": "<PATH_TO_REPO>/mcps/youtube-transcript/.venv/Scripts/python.exe",
+      "args": [
+        "<PATH_TO_REPO>/mcps/youtube-transcript/server.py"
+      ]
+    },
+    "youtube-screenshot": {
+      "command": "<PATH_TO_REPO>/mcps/youtube-screenshot/.venv/Scripts/python.exe",
+      "args": [
+        "<PATH_TO_REPO>/mcps/youtube-screenshot/server.py"
+      ]
+    }
+  }
+}
